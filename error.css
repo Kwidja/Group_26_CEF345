@@ -1,0 +1,82 @@
+
+
+
+
+.splitscreen{
+    display:flex;
+    flex-direction: column;
+}
+.right{
+height: 200px;
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    background: linear-gradient(to bottom (orangered white));
+    background-size: cover;
+}
+.right.copy{
+    color: white;
+    text-align: center;
+    
+}
+.right.copy{
+    color: black;
+    text-align: center;
+}
+.right .copy{
+    margin: 1.5em 0;
+    font-size: 0.875rem;
+}
+.right form{
+    width: 328px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+display: block;
+width: 100%;
+box-sizing: border-box;
+border: 2px solid black;
+padding: 10px;
+}
+.label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+.input-container.password{
+    position: relative;
+}
+.input-container.password{
+    position: absolute;
+    top:42px;
+    right: 16px;
+}
+button{
+    display: block;
+    width: 20%;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 900px){
+ .splitscreen{
+    flex-direction: row;
+    height: 100vh;
+
+}
+.left,
+.right{
+    display: flex;
+    width: 50%;
+    height: auto;
+}
+}
+
+    
