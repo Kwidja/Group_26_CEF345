@@ -5,18 +5,27 @@
         ELIZABETH 
       </title>
         <link rel="stylesheet"href="trial.css">
-        
+       <nav>
+        <div class ="login" id="login">
+          <a href="#home">Home</a>
+          <a href="#Menu">Menu</a>
+          <a href="#About">About</a>
+          <a href="#Contact">Contact</a>
+        </div>
+       </nav> 
   </head>
     <body>
       
       <div class="container">
-      <div class="split-screen">
-        <div class="left">
-          <section class="copy">
-            <h1>ELIZABETH</h1>
-            <img src="images/Orange.JPG" alt="Orange">
-          </section>
+      
+        <div class="split-screen">
+          <div class="left">
+            <section class="copy">
+              <h1>ELIZABETH</h1>
+              <img src="images/Orange.JPG" alt="Orange">
+            </section>
         </div>
+        <form method="post" action="ELIZABETH.php">
         <div class="right">
           <form>
             <section class="copy">
@@ -39,10 +48,13 @@
       <input type="password" id="password" name="password" placeholder="Must be atleast 6 characters"><br>
       <i class="far fa-eye-splash"></i>
     </div> 
-    <button id="submit"> Sign Up</button>
+    <input type="submit" name="submit" value="submit">
+  </form>
+
     <section class="copy legal">
       <p><span class="small"> By continuing, you agree to accept our <br><a href="#">Privacy Policy</a>
       &amp; <a href="#"> Terms of Service</a></span></p>
+   
     </section>
       </div>
     </div>

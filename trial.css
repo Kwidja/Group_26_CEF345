@@ -1,116 +1,124 @@
 :root{
-    font-size: 100%;
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 1.5;
 
 }
 body{
-    padding: 0;
-    margin: 0;
-    font-weight: 500;
-    font-family: 'montserrat' sans-serif;
-
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-family: 'montserrat' sans-serif;
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 }
 h1{
-    font-size: 2.25rem;
-    font-weight: 700;
-    
+  font-size: 2.25rem;
+  font-weight: 700;
+  
 }
 h2{
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 a{
-    text-decoration: none;
+  text-decoration: none;
 
 }
 a:hover{
-    text-decoration: underline;
-    color: blue;
+  text-decoration: underline;
+  color: blue;
 }
 .small{
- font-size: 80%;
- text-align: center;
-}
-.split-screen{
-    display: flex;
-    flex-direction: column;
+  font-size: 100%;
+  text-align: center;
+ }
+ .split-screen{
+     display: flex;
+     flex-direction: column;
+ }
+ .left{
+  height: 200px;
 }
 .left{
-    height: 200px;
+  height: 200px;
 }
 .left, .right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
 }
 .left{
-   background-image:url(images/Orange.JPG) ;
-    
+  background-image:url(images/Orange.JPG) ;
+   
 }
-  .left .copy{
-    color:white;
-    text-align: center;
-  } 
-  .left p{
-    font-weight: 400;
-  }
-  .right .copy{
-    color: black;
-    text-align: center;
-  }
-  .right .copy p{
-    margin: 1.5em 0;
-    font-size: 0.875;
-  }
-  .right form{
-    width: 328px;
-  }
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="password"]{
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
+ .left .copy{
+   color:white;
+   text-align: center;
+ } 
+ .left p{
+   font-weight: 400;
+ }
+ .right .copy{
+   color: black;
+   text-align: center;
+ }
+
+ 
+ .right form{
+   width: 328px;
+   align-items: center;
+
+ }
+
+ form input[type="text"],
+ form input[type="email"],
+ form input[type="password"]{
+   
+  display: block;
+  box-sizing: border-box;
     border-radius: 5px;
     padding: 5px 6px 5px 6px;
-  }
-  label{
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 0.75rem;
-  }
-  .input-container .password{
-     position: relative;
-  }
-  .input-container .password i{
-    position: absolute;
-    top: 42px;
-    right: 16px;
-  }
-  button{
-    display: block;
-    width: 100%;
-    background: orange;
-    border: none;
-    border-radius: 5px;
-    padding: 4px 5px 5px 4px;
-    color: white;
-    font-size: 0.75rem;
-    text-transform: 0.5px;
-  }
-  @media screen and (min-width: 900px){
-    .split-screen{
-        flex-direction: row;
-        height: 100vh;
-    }
-    .left,
-    .right{
-        display: flex;
-        width: 50%;
-        height: auto;
-    }
-  }
+ }
+ label{
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+.input-container .password{
+  position: relative;
+}
+.input-container .password i{
+ position: absolute;
+ top: 42px;
+ right: 16px;
+}
+button{
+  display: block;
+  width: 100%;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 5px 5px 4px;
+  color: white;
+  font-size: 0.75rem;
+  text-transform: 0.5px;
+}
+@media screen and (min-width: 900px){
+  .split-screen{
+      flex-direction: row;
+      height: 100vh;
+
+  }  .left, .right{
+      float:right;
+      width: 50%;
+      height: auto;
+  }}
   .container{
     position: relative;
     width: 60%;
